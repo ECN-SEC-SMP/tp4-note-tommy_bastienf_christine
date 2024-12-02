@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspaces/CPP-TP4
+CMAKE_SOURCE_DIR = /workspaces/tp4-note-tommy_bastienf_christine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspaces/CPP-TP4/build
+CMAKE_BINARY_DIR = /workspaces/tp4-note-tommy_bastienf_christine/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -124,22 +124,11 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/CPP-TP4/build/CMakeFiles /workspaces/CPP-TP4/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/tp4-note-tommy_bastienf_christine/build/CMakeFiles /workspaces/tp4-note-tommy_bastienf_christine/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/CPP-TP4/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/tp4-note-tommy_bastienf_christine/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -168,45 +157,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named run
-
-# Build rule for target.
-run: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 run
-.PHONY : run
-
-# fast build rule for target.
-run/fast:
-	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/build
-.PHONY : run/fast
-
-#=============================================================================
-# Target rules for targets named runTests
-
-# Build rule for target.
-runTests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 runTests
-.PHONY : runTests
-
-# fast build rule for target.
-runTests/fast:
-	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/build
-.PHONY : runTests/fast
-
-#=============================================================================
-# Target rules for targets named clean_all
-
-# Build rule for target.
-clean_all: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 clean_all
-.PHONY : clean_all
-
-# fast build rule for target.
-clean_all/fast:
-	$(MAKE) -f CMakeFiles/clean_all.dir/build.make CMakeFiles/clean_all.dir/build
-.PHONY : clean_all/fast
-
-#=============================================================================
 # Target rules for targets named main
 
 # Build rule for target.
@@ -216,8 +166,47 @@ main: cmake_check_build_system
 
 # fast build rule for target.
 main/fast:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+	$(MAKE) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
 .PHONY : main/fast
+
+#=============================================================================
+# Target rules for targets named all_tests
+
+# Build rule for target.
+all_tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 all_tests
+.PHONY : all_tests
+
+# fast build rule for target.
+all_tests/fast:
+	$(MAKE) -f tests/CMakeFiles/all_tests.dir/build.make tests/CMakeFiles/all_tests.dir/build
+.PHONY : all_tests/fast
+
+#=============================================================================
+# Target rules for targets named test
+
+# Build rule for target.
+test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test
+.PHONY : test
+
+# fast build rule for target.
+test/fast:
+	$(MAKE) -f tests/CMakeFiles/test.dir/build.make tests/CMakeFiles/test.dir/build
+.PHONY : test/fast
+
+#=============================================================================
+# Target rules for targets named my_library
+
+# Build rule for target.
+my_library: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_library
+.PHONY : my_library
+
+# fast build rule for target.
+my_library/fast:
+	$(MAKE) -f tests/CMakeFiles/my_library.dir/build.make tests/CMakeFiles/my_library.dir/build
+.PHONY : my_library/fast
 
 #=============================================================================
 # Target rules for targets named gmock_main
@@ -229,7 +218,7 @@ gmock_main: cmake_check_build_system
 
 # fast build rule for target.
 gmock_main/fast:
-	$(MAKE) -f googletest/googlemock/CMakeFiles/gmock_main.dir/build.make googletest/googlemock/CMakeFiles/gmock_main.dir/build
+	$(MAKE) -f tests/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make tests/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
 .PHONY : gmock_main/fast
 
 #=============================================================================
@@ -242,7 +231,7 @@ gmock: cmake_check_build_system
 
 # fast build rule for target.
 gmock/fast:
-	$(MAKE) -f googletest/googlemock/CMakeFiles/gmock.dir/build.make googletest/googlemock/CMakeFiles/gmock.dir/build
+	$(MAKE) -f tests/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make tests/googletest-build/googlemock/CMakeFiles/gmock.dir/build
 .PHONY : gmock/fast
 
 #=============================================================================
@@ -255,7 +244,7 @@ gtest_main: cmake_check_build_system
 
 # fast build rule for target.
 gtest_main/fast:
-	$(MAKE) -f googletest/googletest/CMakeFiles/gtest_main.dir/build.make googletest/googletest/CMakeFiles/gtest_main.dir/build
+	$(MAKE) -f tests/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make tests/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
 #=============================================================================
@@ -268,251 +257,8 @@ gtest: cmake_check_build_system
 
 # fast build rule for target.
 gtest/fast:
-	$(MAKE) -f googletest/googletest/CMakeFiles/gtest.dir/build.make googletest/googletest/CMakeFiles/gtest.dir/build
+	$(MAKE) -f tests/googletest-build/googletest/CMakeFiles/gtest.dir/build.make tests/googletest-build/googletest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
-
-src/Carte.o: src/Carte.cpp.o
-
-.PHONY : src/Carte.o
-
-# target to build an object file
-src/Carte.cpp.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Carte.cpp.o
-.PHONY : src/Carte.cpp.o
-
-src/Carte.i: src/Carte.cpp.i
-
-.PHONY : src/Carte.i
-
-# target to preprocess a source file
-src/Carte.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Carte.cpp.i
-.PHONY : src/Carte.cpp.i
-
-src/Carte.s: src/Carte.cpp.s
-
-.PHONY : src/Carte.s
-
-# target to generate assembly for a file
-src/Carte.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Carte.cpp.s
-.PHONY : src/Carte.cpp.s
-
-src/Constructible.o: src/Constructible.cpp.o
-
-.PHONY : src/Constructible.o
-
-# target to build an object file
-src/Constructible.cpp.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Constructible.cpp.o
-.PHONY : src/Constructible.cpp.o
-
-src/Constructible.i: src/Constructible.cpp.i
-
-.PHONY : src/Constructible.i
-
-# target to preprocess a source file
-src/Constructible.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Constructible.cpp.i
-.PHONY : src/Constructible.cpp.i
-
-src/Constructible.s: src/Constructible.cpp.s
-
-.PHONY : src/Constructible.s
-
-# target to generate assembly for a file
-src/Constructible.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Constructible.cpp.s
-.PHONY : src/Constructible.cpp.s
-
-src/Parcelle.o: src/Parcelle.cpp.o
-
-.PHONY : src/Parcelle.o
-
-# target to build an object file
-src/Parcelle.cpp.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Parcelle.cpp.o
-.PHONY : src/Parcelle.cpp.o
-
-src/Parcelle.i: src/Parcelle.cpp.i
-
-.PHONY : src/Parcelle.i
-
-# target to preprocess a source file
-src/Parcelle.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Parcelle.cpp.i
-.PHONY : src/Parcelle.cpp.i
-
-src/Parcelle.s: src/Parcelle.cpp.s
-
-.PHONY : src/Parcelle.s
-
-# target to generate assembly for a file
-src/Parcelle.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Parcelle.cpp.s
-.PHONY : src/Parcelle.cpp.s
-
-src/ZA.o: src/ZA.cpp.o
-
-.PHONY : src/ZA.o
-
-# target to build an object file
-src/ZA.cpp.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/ZA.cpp.o
-.PHONY : src/ZA.cpp.o
-
-src/ZA.i: src/ZA.cpp.i
-
-.PHONY : src/ZA.i
-
-# target to preprocess a source file
-src/ZA.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/ZA.cpp.i
-.PHONY : src/ZA.cpp.i
-
-src/ZA.s: src/ZA.cpp.s
-
-.PHONY : src/ZA.s
-
-# target to generate assembly for a file
-src/ZA.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/ZA.cpp.s
-.PHONY : src/ZA.cpp.s
-
-src/ZAU.o: src/ZAU.cpp.o
-
-.PHONY : src/ZAU.o
-
-# target to build an object file
-src/ZAU.cpp.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/ZAU.cpp.o
-.PHONY : src/ZAU.cpp.o
-
-src/ZAU.i: src/ZAU.cpp.i
-
-.PHONY : src/ZAU.i
-
-# target to preprocess a source file
-src/ZAU.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/ZAU.cpp.i
-.PHONY : src/ZAU.cpp.i
-
-src/ZAU.s: src/ZAU.cpp.s
-
-.PHONY : src/ZAU.s
-
-# target to generate assembly for a file
-src/ZAU.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/ZAU.cpp.s
-.PHONY : src/ZAU.cpp.s
-
-src/ZN.o: src/ZN.cpp.o
-
-.PHONY : src/ZN.o
-
-# target to build an object file
-src/ZN.cpp.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/ZN.cpp.o
-.PHONY : src/ZN.cpp.o
-
-src/ZN.i: src/ZN.cpp.i
-
-.PHONY : src/ZN.i
-
-# target to preprocess a source file
-src/ZN.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/ZN.cpp.i
-.PHONY : src/ZN.cpp.i
-
-src/ZN.s: src/ZN.cpp.s
-
-.PHONY : src/ZN.s
-
-# target to generate assembly for a file
-src/ZN.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/ZN.cpp.s
-.PHONY : src/ZN.cpp.s
-
-src/ZU.o: src/ZU.cpp.o
-
-.PHONY : src/ZU.o
-
-# target to build an object file
-src/ZU.cpp.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/ZU.cpp.o
-.PHONY : src/ZU.cpp.o
-
-src/ZU.i: src/ZU.cpp.i
-
-.PHONY : src/ZU.i
-
-# target to preprocess a source file
-src/ZU.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/ZU.cpp.i
-.PHONY : src/ZU.cpp.i
-
-src/ZU.s: src/ZU.cpp.s
-
-.PHONY : src/ZU.s
-
-# target to generate assembly for a file
-src/ZU.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/ZU.cpp.s
-.PHONY : src/ZU.cpp.s
-
-src/main.o: src/main.cpp.o
-
-.PHONY : src/main.o
-
-# target to build an object file
-src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
-
-src/main.i: src/main.cpp.i
-
-.PHONY : src/main.i
-
-# target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
-
-src/main.s: src/main.cpp.s
-
-.PHONY : src/main.s
-
-# target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
-
-tests/test.o: tests/test.cpp.o
-
-.PHONY : tests/test.o
-
-# target to build an object file
-tests/test.cpp.o:
-	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test.cpp.o
-.PHONY : tests/test.cpp.o
-
-tests/test.i: tests/test.cpp.i
-
-.PHONY : tests/test.i
-
-# target to preprocess a source file
-tests/test.cpp.i:
-	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test.cpp.i
-.PHONY : tests/test.cpp.i
-
-tests/test.s: tests/test.cpp.s
-
-.PHONY : tests/test.s
-
-# target to generate assembly for a file
-tests/test.cpp.s:
-	$(MAKE) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/tests/test.cpp.s
-.PHONY : tests/test.cpp.s
 
 # Help Target
 help:
@@ -526,42 +272,14 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... test"
-	@echo "... run"
-	@echo "... runTests"
-	@echo "... clean_all"
 	@echo "... main"
+	@echo "... all_tests"
+	@echo "... test"
+	@echo "... my_library"
 	@echo "... gmock_main"
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
-	@echo "... src/Carte.o"
-	@echo "... src/Carte.i"
-	@echo "... src/Carte.s"
-	@echo "... src/Constructible.o"
-	@echo "... src/Constructible.i"
-	@echo "... src/Constructible.s"
-	@echo "... src/Parcelle.o"
-	@echo "... src/Parcelle.i"
-	@echo "... src/Parcelle.s"
-	@echo "... src/ZA.o"
-	@echo "... src/ZA.i"
-	@echo "... src/ZA.s"
-	@echo "... src/ZAU.o"
-	@echo "... src/ZAU.i"
-	@echo "... src/ZAU.s"
-	@echo "... src/ZN.o"
-	@echo "... src/ZN.i"
-	@echo "... src/ZN.s"
-	@echo "... src/ZU.o"
-	@echo "... src/ZU.i"
-	@echo "... src/ZU.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
-	@echo "... tests/test.o"
-	@echo "... tests/test.i"
-	@echo "... tests/test.s"
 .PHONY : help
 
 

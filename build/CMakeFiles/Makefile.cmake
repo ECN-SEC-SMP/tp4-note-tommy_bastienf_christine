@@ -50,6 +50,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../googletest/googletest/cmake/gtest.pc.in"
   "../googletest/googletest/cmake/gtest_main.pc.in"
   "../googletest/googletest/cmake/internal_utils.cmake"
+  "../src/CMakeLists.txt"
+  "../tests/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -61,19 +63,21 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "googletest/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "googletest/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "tests/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "tests/googletest-build/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "tests/googletest-build/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "tests/googletest-build/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/run.dir/DependInfo.cmake"
-  "CMakeFiles/runTests.dir/DependInfo.cmake"
-  "CMakeFiles/clean_all.dir/DependInfo.cmake"
-  "CMakeFiles/main.dir/DependInfo.cmake"
-  "googletest/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
-  "googletest/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
-  "googletest/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
-  "googletest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "src/CMakeFiles/main.dir/DependInfo.cmake"
+  "tests/CMakeFiles/all_tests.dir/DependInfo.cmake"
+  "tests/CMakeFiles/test.dir/DependInfo.cmake"
+  "tests/CMakeFiles/my_library.dir/DependInfo.cmake"
+  "tests/googletest-build/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
+  "tests/googletest-build/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
+  "tests/googletest-build/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
+  "tests/googletest-build/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
   )

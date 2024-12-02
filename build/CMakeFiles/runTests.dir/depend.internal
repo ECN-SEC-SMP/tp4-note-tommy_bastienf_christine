@@ -23,5 +23,12 @@ CMakeFiles/runTests.dir/tests/test.cpp.o
  ../googletest/googletest/include/gtest/internal/gtest-port.h
  ../googletest/googletest/include/gtest/internal/gtest-string.h
  ../googletest/googletest/include/gtest/internal/gtest-type-util.h
- /workspaces/CPP-TP4/headers/Point2D.hpp
- /workspaces/CPP-TP4/tests/test.cpp
+ /workspaces/tp4-note-tommy_bastienf_christine/headers/Constructible.hpp
+ /workspaces/tp4-note-tommy_bastienf_christine/headers/Parcelle.hpp
+ /workspaces/tp4-note-tommy_bastienf_christine/headers/Point2D.hpp
+ /workspaces/tp4-note-tommy_bastienf_christine/headers/Polygone.hpp
+ /workspaces/tp4-note-tommy_bastienf_christine/headers/ZA.hpp
+ /workspaces/tp4-note-tommy_bastienf_christine/headers/ZAU.hpp
+ /workspaces/tp4-note-tommy_bastienf_christine/headers/ZN.hpp
+ /workspaces/tp4-note-tommy_bastienf_christine/headers/ZU.hpp
+ /workspaces/tp4-note-tommy_bastienf_christine/tests/test.cpp

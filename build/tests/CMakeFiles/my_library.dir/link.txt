@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmy_library.a  CMakeFiles/my_library.dir/__/src/Parcelle.cpp.o CMakeFiles/my_library.dir/__/src/ZN.cpp.o CMakeFiles/my_library.dir/__/src/ZA.cpp.o CMakeFiles/my_library.dir/__/src/ZU.cpp.o CMakeFiles/my_library.dir/__/src/ZAU.cpp.o CMakeFiles/my_library.dir/__/src/Carte.cpp.o CMakeFiles/my_library.dir/__/src/Constructible.cpp.o
+/usr/bin/ranlib libmy_library.a

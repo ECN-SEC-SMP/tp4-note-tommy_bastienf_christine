@@ -4,7 +4,7 @@ using namespace std;
 
 ZA::ZA(int num, const string &prop, Polygone<int> polygone) : ZN(num, prop, polygone)
 {
-    setType("Zone Agripcole");
+    setType("Zone Agricole");
 }
 
 void ZA::setType(const string &type)

@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/workspaces/tp4-note-tommy_bastienf_christine/headers/Parcelle.hpp
+iostream
+-
+string
+-
+cmath
+-
+stdexcept
+-
+Polygone.hpp
+/workspaces/tp4-note-tommy_bastienf_christine/headers/Polygone.hpp
+
+/workspaces/tp4-note-tommy_bastienf_christine/headers/Point2D.hpp
+iostream
+-
+
+/workspaces/tp4-note-tommy_bastienf_christine/headers/Polygone.hpp
+vector
+-
+Point2D.hpp
+/workspaces/tp4-note-tommy_bastienf_christine/headers/Point2D.hpp
+
+/workspaces/tp4-note-tommy_bastienf_christine/headers/ZA.hpp
+ZN.hpp
+/workspaces/tp4-note-tommy_bastienf_christine/headers/ZN.hpp
+Parcelle.hpp
+/workspaces/tp4-note-tommy_bastienf_christine/headers/Parcelle.hpp
+
+/workspaces/tp4-note-tommy_bastienf_christine/headers/ZN.hpp
+Parcelle.hpp
+/workspaces/tp4-note-tommy_bastienf_christine/headers/Parcelle.hpp
+
+/workspaces/tp4-note-tommy_bastienf_christine/src/ZA.cpp
+../headers/ZA.hpp
+/workspaces/tp4-note-tommy_bastienf_christine/headers/ZA.hpp
+
