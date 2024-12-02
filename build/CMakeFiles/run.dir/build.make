@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspaces/CPP-TP4
+CMAKE_SOURCE_DIR = /workspaces/tp4-note-tommy_bastienf_christine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspaces/CPP-TP4/build
+CMAKE_BINARY_DIR = /workspaces/tp4-note-tommy_bastienf_christine/build
 
 # Utility rule file for run.
 
@@ -71,6 +71,6 @@ CMakeFiles/run.dir/clean:
 .PHONY : CMakeFiles/run.dir/clean
 
 CMakeFiles/run.dir/depend:
-	cd /workspaces/CPP-TP4/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspaces/CPP-TP4 /workspaces/CPP-TP4 /workspaces/CPP-TP4/build /workspaces/CPP-TP4/build /workspaces/CPP-TP4/build/CMakeFiles/run.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspaces/tp4-note-tommy_bastienf_christine/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspaces/tp4-note-tommy_bastienf_christine /workspaces/tp4-note-tommy_bastienf_christine /workspaces/tp4-note-tommy_bastienf_christine/build /workspaces/tp4-note-tommy_bastienf_christine/build /workspaces/tp4-note-tommy_bastienf_christine/build/CMakeFiles/run.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/run.dir/depend
 

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspaces/CPP-TP4
+CMAKE_SOURCE_DIR = /workspaces/tp4-note-tommy_bastienf_christine
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspaces/CPP-TP4/build
+CMAKE_BINARY_DIR = /workspaces/tp4-note-tommy_bastienf_christine/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /workspaces/CPP-TP4/build && $(CMAKE_COMMAND) -E cmake_progress_start /workspaces/CPP-TP4/build/CMakeFiles /workspaces/CPP-TP4/build/googletest/CMakeFiles/progress.marks
-	cd /workspaces/CPP-TP4/build && $(MAKE) -f CMakeFiles/Makefile2 googletest/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/CPP-TP4/build/CMakeFiles 0
+	cd /workspaces/tp4-note-tommy_bastienf_christine/build && $(CMAKE_COMMAND) -E cmake_progress_start /workspaces/tp4-note-tommy_bastienf_christine/build/CMakeFiles /workspaces/tp4-note-tommy_bastienf_christine/build/googletest/CMakeFiles/progress.marks
+	cd /workspaces/tp4-note-tommy_bastienf_christine/build && $(MAKE) -f CMakeFiles/Makefile2 googletest/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/tp4-note-tommy_bastienf_christine/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /workspaces/CPP-TP4/build && $(MAKE) -f CMakeFiles/Makefile2 googletest/clean
+	cd /workspaces/tp4-note-tommy_bastienf_christine/build && $(MAKE) -f CMakeFiles/Makefile2 googletest/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,17 +154,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /workspaces/CPP-TP4/build && $(MAKE) -f CMakeFiles/Makefile2 googletest/preinstall
+	cd /workspaces/tp4-note-tommy_bastienf_christine/build && $(MAKE) -f CMakeFiles/Makefile2 googletest/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /workspaces/CPP-TP4/build && $(MAKE) -f CMakeFiles/Makefile2 googletest/preinstall
+	cd /workspaces/tp4-note-tommy_bastienf_christine/build && $(MAKE) -f CMakeFiles/Makefile2 googletest/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /workspaces/CPP-TP4/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /workspaces/tp4-note-tommy_bastienf_christine/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -191,6 +191,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /workspaces/CPP-TP4/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /workspaces/tp4-note-tommy_bastienf_christine/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
